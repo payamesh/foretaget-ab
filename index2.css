@@ -4,6 +4,11 @@
     grid-template-rows: repeat(6, 0.2fr);
 }
 
+.grid-nav{
+    display:grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows: 15px 1fr;
+}
 nav {
     z-index: 100;
     top: 0;
@@ -21,6 +26,29 @@ nav {
     -moz-transition: height 200ms ease-in;
     -o-transition: height 200ms ease-in;
     transition: height 200ms ease-in;
+}
+.nav-main{
+    margin-left: 40px;
+    grid-row:2;
+}
+.nav-main li>a{
+    font-size: 0.8em;
+    grid-column:2;
+    margin-bottom: 10px;
+justify-content: center;
+}
+#sveng{
+    margin-left: 40px;
+    margin-top:10px;
+    grid-column: 2;
+font-size: 0.7em;
+}
+.nav-company-name {
+    grid-row:2;
+    margin-top:10px;
+    grid-column: 10;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 a {
@@ -52,7 +80,7 @@ li a:hover {
 }
 
 #bakgrundsbild {
-    width: 100%;
+    width: 94%;
     margin: 0 auto;
     grid-column: 2/12;
     grid-row: 1/3;
@@ -67,21 +95,22 @@ li a:hover {
 
 .start_h3 {
     position: relative;
-    margin-bottom: 2rem;
+
     margin-top: 1em;
-    font-size: 2vw;
+    font-size: 1.3em;
     font-weight: 100;
 }
 
 .start_h3:before {
-    left: -45px;
-    top: -9px;
+    left: -21%;
+
+    top: -34%;
     position: absolute;
     content: "___";
 }
 
 .start_p {
-    font-size: 2vw;
+    font-size: 1.2rem;
 }
 
 .section-a {
@@ -98,6 +127,16 @@ li a:hover {
     grid-template-rows: repeat(6, 0.2fr);
 }
 
+.verksamhet_h3::before{
+    left: -39px;
+    top: 18px;
+    position: absolute;
+    content: "____";
+    color: #0075c8;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
 .section-v {
     margin-top: 50px;
     display: grid;
@@ -106,17 +145,19 @@ li a:hover {
     grid-template-rows: repeat(6, 0.2fr)
 }
 
-.sectionbox-a {
+.sectionbox-a  {
     position: relative;
-    margin-top: 3rem;
-    margin-left: 4rem;
-    grid-column: 1/5;
-    grid-row: 4/6;
+    margin-top: 29%;
+    margin-left: 1rem;
+    grid-column: 2/5;
+    grid-row: 4;
     background-color: #0075c8;
     box-shadow: 0 2px 29px 0 rgba(0, 0, 0, 1);
     color: #fff;
     text-align: center;
-    width: 100%;
+    width: 120%;
+    min-height:200px;
+    
 }
 
 .sectionb_p {
@@ -159,20 +200,24 @@ li a:hover {
     height: 2px;
     background-color: #fff;
     bottom: 20px;
-    left: 15px;
-    width: 38%;
+    left: 14%;
+    width: 28%;
 }
 
 .read-more-a {
     position: absolute;
     right: -10%;
     bottom: 0;
-    height: 25px;
-    width: 30%;
+    height: 30px;
+    width: 25%;
     background-color: white;
     color: black;
-    border: 2px solid black;
-    font-size: 12px;
+    font-size: 15px;
+}
+
+.read-more-a a {
+    position: relative;
+    top: 20%;
 }
 
 .read-more-b {
@@ -181,7 +226,7 @@ li a:hover {
     right: 46%;
     width: 18%;
     bottom: 14%;
-    height: 25px;
+    height: 30px;
     background-color: white;
     color: black;
     font-size: 17px;
@@ -299,17 +344,21 @@ li a:hover {
 .verksamhet_h2 {
     font-family: Roboto;
     font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 0;
 }
 
 .verksamhet_p {
+    margin-top: 5px;
     font-family: Muli;
     font-size: 14px;
     font-weight: 200;
+
 }
 
 .textboxVerk {
     box-shadow: 0 2px 29px 0 rgba(0, 0, 0, 1);
-    grid-column: 6/11;
+    grid-column: 6/10;
     grid-row: 3/6;
     background-color: white;
 }
@@ -366,12 +415,13 @@ li a:hover {
 
 .omoss_h1::before {
     left: -25px;
-    top: -7px;
+    top: -13px;
     position: absolute;
-    content: "___";
+    content: "__";
     color: #0075c8;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .omoss_h2 {
@@ -420,7 +470,7 @@ li a:hover {
 }
 
 .textboxKontor {
-    margin-left: 40px;
+    margin-left: 0;
     grid-column: 3/7;
     grid-row: 1/6;
     background-color: white;
@@ -446,8 +496,12 @@ li a:hover {
     text-align: center;
     justify-content: center;
 }
-.advokatbox{position: relative;}
-.advokatbox::before{
+
+.advokatbox {
+    position: relative;
+}
+
+.advokatbox::before {
     left: 0px;
     top: -11px;
     position: absolute;
@@ -456,15 +510,18 @@ li a:hover {
     font-weight: bolder;
     font-size: 20px;
 }
-.advokatbox h3{
+
+.advokatbox h3 {
     font-size: 0.8em;
     margin-bottom: 0.2rem;
 
 }
-.advokatbox p{
+
+.advokatbox p {
     font-size: 0.8em;
 
 }
+
 .advokatbox:hover {
     transform: scale(1.10);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 1);
@@ -593,30 +650,58 @@ li a:hover {
     margin-bottom: -80px;
 }
 
-@media(max-width:460px) {
+@media(max-width:610px) {
     nav {
         height: 60px;
     }
-
+    .linkedin-logo{
+        display:none;
+    }
     .nav-main {
 
+        grid-column: 0;
+    }
+    .kontor_p{
+        text-align: center;
+        font-size: 15px;
+        width:100%; 
+    }
+    .kontor_h2{
+        font-size: 15px;
+    }
+    .kontor_h4{
+        text-align: center;
+        font-size: 17px;
+    }
+    .kontor_h4:before {
+        left: 68px;
+        top: -10px;
+       
+    }
+    .nav-company-name{
+        display:none;
+    }
+    .testimones{
+        margin-top:30px;
+    }
     #bakgrundsbild {
         margin: 0 auto;
-        grid-column: 2/13;
-        grid-row: 1/6;
-        height: 400px;
+        grid-column: 1/13;
+        grid-row: 1/9;
+        height: 450px;
     }
-
+    
     .sectionbox-a {
         margin: inherit;
         position: relative;
-        grid-column: 2/13;
-        grid-row: 4/6;
+        grid-column: 1/10;
+        grid-row: 5/9;
         text-align: center;
+        width: 134%;
     }
 
     .read-more-a {
-        right: 25%;
+        right: 35%;
     }
 
     .img-gasell {
@@ -632,14 +717,14 @@ li a:hover {
     }
 
     .start_p {
-        font-size: 4vw;
+        font-size: 1.2em;
     }
 
     .start_h3:before {
-        left: -25px;
+        left: -21%;
         top: -10px;
         position: absolute;
-        content: "_";
+        content: "___";
     }
 
     .sectionbox-b {
@@ -655,13 +740,13 @@ li a:hover {
 
     .hr_sectionbox {
         width: 75%;
-        bottom: 30px;
+        bottom: 35px;
     }
 
     .separator1 {
 
         height: 150px;
-        width: 110%;
+        width: 100%;
     }
 
     .sliderPosition {
@@ -692,7 +777,9 @@ li a:hover {
     }
 
     .textboxVerk {
-        height: 350px;
+        height: auto;
+        grid-column: 8/13;
+
     }
 
     .textvidstreck {
@@ -735,25 +822,33 @@ li a:hover {
 
     .krympa {
         width: 90%;
+        margin:0 auto;
     }
 
+    
     .showcaseHolder {
+        margin: 0 auto;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        
     }
 
     .showcaseHolder>div {
-        width: 100%;
+        width: 300px;
+        max-width: 100%;
         flex-grow: 0;
-        /* height:initial;
-        max-height: initial;
-        min-height: initial; */
 
     }
-
+    .showcaseHolder>div:nth-child(2){
+        display:none;
+    }
+    .showcaseHolder>div:nth-child(3){
+display:none;
+    }
+    
     .showcaseText {
-        margin-left: 40px;
+        margin: 0px 20px;
+
         flex-grow: 1;
         width: 100%;
         padding: 0;
@@ -768,7 +863,7 @@ li a:hover {
     }
 
     .omoss_p {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .showcaseImage {
@@ -780,7 +875,21 @@ li a:hover {
         background-size: cover;
 
     }
-
+    #kontor > .grid{
+        margin:0 auto;
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap:10px;
+    }
+    .textboxKontor{
+        grid-column:1/5;
+        grid-row:1/2;
+    }
+    .smallmap{
+        margin-left:10px;
+        grid-column: 1/5;
+        grid-row:2;
+    }
     .mb50 {
         margin-top: 0px;
         ;
@@ -799,31 +908,177 @@ li a:hover {
     }
 
     #omoss {
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
-    .textboxKontor {
-        grid-column: 1/7;
-        grid-row: 1/6;
-        background-color: white;
-    }
-
-    .smallmap {
-        grid-column: 8/13;
-    }
+  
 
     .advokater {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+        grid-template-columns: 1fr;
         grid-gap: 5px;
         grid-template-rows: repeat(2, 0.5fr);
     }
 
     .advokat {
-        max-width: 150px;
+        max-width: 250px;
         max-height: 300px;
         text-align: center;
         justify-content: center;
+        font-size: 20px;
     }
+    .advokatbox::before {
+        left: 20px;
+        top: -12px;
+        position: absolute;
+        content: "__";
+        color: #0075c8;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .nav-toggle-container{
+width: 100%;
+height: 50px;
+position: fixed;
+background-color: white;
+z-index: 100;
+left:0px;
+    }
+/* TESTISH */
+
+/* imports */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+/* colors */
+/* variables */
+/* mixins */
+/* resets and base styles */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+*:focus {
+  outline: none;
+}
+
+
+
+body {
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* nav toggle */
+.nav-toggle {
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  height: 2rem;
+  left: 2rem;
+  position: fixed;
+  top: 0.4rem;
+  width: 2.6rem;
+  z-index: 2;
+}
+.nav-toggle:hover {
+  opacity: 0.8;
+}
+.nav-toggle .nav-toggle-bar,
+.nav-toggle .nav-toggle-bar::after,
+.nav-toggle .nav-toggle-bar::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #0075c8;
+  border: 0.5px solid white;
+  content: '';
+  height: 0.4rem;
+  width: 100%;
+}
+.nav-toggle .nav-toggle-bar {
+  margin-top: 0;
+}
+.nav-toggle .nav-toggle-bar::after {
+  margin-top: 0.8rem;
+}
+.nav-toggle .nav-toggle-bar::before {
+  margin-top: -0.8rem;
+
+}
+.nav-toggle.expanded .nav-toggle-bar {
+  background: transparent;
+border:0px;
+}
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+  background: black;
+  margin-top: 0;
+}
+.nav-toggle.expanded .nav-toggle-bar::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.nav-toggle.expanded .nav-toggle-bar::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* nav */
+.nav {
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  background: #0075c8;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 100vh;
+  left: -20rem;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 20rem;
+  z-index: 1;
+}
+.nav.expanded {
+  left: 0;
+}
+.nav ul {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+    
 }
 
 @media(max-width:361px) {
@@ -834,9 +1089,11 @@ li a:hover {
     .read-more-a {
         width: 126px;
     }
+   
 }
-@media(max-width:920px){
-    .advokater{
-        grid-template-columns: repeat(auto-fit, minmax(180px, 0.5fr));
+
+@media(min-width:920px) {
+    .advokater {
+        grid-template-columns: repeat(2, minmax(110px, 1fr));
     }
 }
