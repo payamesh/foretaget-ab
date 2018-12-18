@@ -107,7 +107,7 @@ let img1 = document.getElementsByClassName('imgbutton')[0];
 let img2 = document.getElementsByClassName('imgbutton2');
 
 
-console.log(textToChange)
+
 
 
 function changeText() {
@@ -139,3 +139,20 @@ function changeText3() {
     textToChange.innerHTML = "Vad säger våra kunder? <br> Utmärkt service, rekommenderas starkt. Tack för er hjälp.<br> //Fortfarande fri"
 
 }
+
+(function() {
+
+	var hamburger = {
+		navToggle: document.querySelector('.nav-toggle'),
+		nav: document.querySelector('nav'),
+
+		doToggle: function(e) {
+			e.preventDefault();
+			this.navToggle.classList.toggle('expanded');
+			this.nav.classList.toggle('expanded');
+		}
+	};
+
+	hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());

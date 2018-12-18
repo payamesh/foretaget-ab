@@ -599,8 +599,6 @@ li a:hover {
     }
 
     .nav-main {
-        grid-column: 2/12;
-    }
 
     #bakgrundsbild {
         margin: 0 auto;
