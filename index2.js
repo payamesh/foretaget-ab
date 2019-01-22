@@ -35,8 +35,8 @@ const mySiema = new Siema({
     onInit: () => {},
     onChange: () => {},
 });
-document.querySelector('.button-left').addEventListener('click', () => mySiema.prev());
-document.querySelector('.button-right').addEventListener('click', () => mySiema.next());
+document.querySelector('.occupation__button-left').addEventListener('click', () => mySiema.prev());
+document.querySelector('.occupation__button-right').addEventListener('click', () => mySiema.next());
 setInterval(() => mySiema.next(), 10500)
 
 $(document).ready(function() {
@@ -116,7 +116,7 @@ function changeText() {
     document.getElementById('imgbutton2').style.backgroundColor = 'lightgrey';
 
 
-    textToChange.innerHTML = "blablablab lablabla blablablablab lablablabla blablabalbal bablabla djaiosdja djaoisjda blabal"
+    textToChange.innerHTML = "Vad säger våra kunder? <br> blablablab lablabla blablablablab lablablabla blablabalbal bablabla djaiosdja djaoisjda blabal"
 
 }
 

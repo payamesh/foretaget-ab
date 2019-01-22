@@ -1,0 +1,36 @@
+.grid__presentation {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 0.2fr);
+}
+.presentation__text {
+    grid-column: 3;
+    justify-content: end;
+    background: white;
+    color: black;
+    font-size:14px;
+    text-transform: uppercase;
+}
+
+.presentation__line {
+    align-self: center;
+    grid-column: 4/11;
+    background: #0075c8;
+    color: white;
+    border-radius: 1000px;
+    height: 6px;
+}
+
+
+
+
+@media(max-width:768px) {
+
+    .presentation__text {
+        grid-column: 1/3;
+        margin-left: 5px;
+    }
+    .presentation__line {
+        grid-column: 4/13;
+    }
+}

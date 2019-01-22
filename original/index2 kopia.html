@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Muli:200|Roboto:300i,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="index2.css">
-    <link rel="stylesheet" href="./components/components.css">
     <link rel="stylesheet" href="animations.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,34 +19,34 @@
 
     </div>
 </div>
+<nav class="grid-nav nav">
+    <li id="sveng"><a href="#_blank">SV/EN</a></li>
+    <ul class="nav-main">
+        <li><a href="#start">START /</a></li>
+        <li><a href="#verksamhet">VERKSAMHET /</a></li>
+        <li><a href="#omoss">OM OSS /</a></li>
+        <li><a href="#kontakt">KONTAKT</a></li>
+    </ul>
+    <a class="nav-company-name" href="_blank"><img style="height: 56%; margin-top:5px;" src="./img/logo2.svg" alt="logotyp"></a>
+
+</nav>
 
 <body class="krympa">
-    <nav class="grid-nav nav">
-        <li id="sveng"><a href="#_blank">SV/EN</a></li>
-        <ul class="nav-main">
-            <li><a href="#start">START /</a></li>
-            <li><a href="#verksamhet">VERKSAMHET /</a></li>
-            <li><a href="#omoss">OM OSS /</a></li>
-            <li><a href="#kontakt">KONTAKT</a></li>
-        </ul>
-        <a class="nav-company-name" href="_blank"><img style="height: 56%; margin-top:5px;" src="./img/logo2.svg" alt="logotyp"></a>
-    
-    </nav>
     <section id="start" class="grid-section-a">
-        <div class="hero__start">
+        <div class="start">
 
-            <img id="hero__img" src="./img/hero.jpg">
-            <div class="hero__box">
+            <img id="bakgrundsbild" src="./img/hero.jpg">
+            <div class="sectionbox-a">
 
-                <div class="hero__box-inner">
+                <div class="section-a-inner">
 
-                    <div class="hero__textcontainer">
-                        <h3 class="hero__h3">Företag AB</h3>
-                        <p class="hero__p">Vi är en världens ledande företag specialiserade på saker företag gör.</p>
+                    <div class="textHolder">
+                        <h3 class="start_h3">Företag AB</h3>
+                        <p class="start_p">Vi är en världens ledande företag specialiserade på saker företag gör.</p>
 
                     </div>
-                    <a class="hero__button" href="#omoss">LÄS MER <span class="hero__button-arrow">></span> </a>
-                    
+                    <div class="read-more-a"><a href="#omoss">LÄS MER </a><a href="#omoss" class="arrow-right">></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,51 +54,50 @@
     </section>
 
     <section class="testimones">
-        <div data-aos="zoom-in-up" class="grid__testimones">
-            <div class="testimones__box">
-                <div class="testimones__quote">
+        <div data-aos="zoom-in-up" class="grid-testimones">
+            <div class="sectionbox-b">
+                <div class="sectionb_h1">
                     "
                 </div>
-                <p class="testimones__p">Vad säger våra kunder? <br> "blablablab lablabla blablablablab lablablabla
+                <p class="sectionb_p">Vad säger våra kunder? <br> "blablablab lablabla blablablablab lablablabla
                     blablabalbal bablabla djaiosdja
                     djaoisjda blabal"</p>
-                <hr class="testimones__line">
-                <a class="testimones__button" href="#kontakt">Länktext <span class="testimones__button-arrow">></span> </a>
-             </div>
-            
-            <img class="testimones__img" src="./img/di-gasell.png" alt="">
-            <div class="bullet_container">
-                <div onclick="changeText();" id="bullet__button" class="bullet__button"></div>
-                <div onclick="changeText2();" class="bullet__button2" id="bullet__button2"> </div>
-                <div onclick="changeText3();" id="bullet__button3" class="bullet__button3"></div>
+                <hr class="hr_sectionbox">
+                <div class="read-more-b"><a href="#kontakt">Länktext</a><a href="#kontakt" class="arrow-right">></a> </div>
+            </div>
+            <img class="img-gasell" src="./img/di-gasell.png" alt="">
+            <div class="clickbuttonholder">
+                <div onclick="changeText();" id="imgbutton" class="imgbutton"></div>
+                <div onclick="changeText2();" class="imgbutton2" id="imgbutton2"> </div>
+                <div onclick="changeText3();" id="imgbutton3" class="imgbutton3"></div>
                 
             </div>
         </div>
     </section>
 
-    <hr class="separator__img">
+    <hr style="margin-top: 40px;" class="separator1">
 
-    <section id="verksamhet">
+    <section id="verksamhet" class="verksamhet">
         <div style="margin-top: 90px;"> </div>
-        <div data-aos="zoom-in-up" class="grid__presentation">
-            <div class="presentation__text">Verksamhet</div>
-            <div class="presentation__line"></div>
+        <div data-aos="zoom-in-up" class="grid">
+            <div class="textvidstreck">Verksamhet</div>
+            <div class="streck"></div>
         </div>
-        <div class="slider__container">
+        <div class="testish">
             <div data-aos="zoom-right" class="sliderPosition">
                 <div class="siema">
-                    <img class="occupation__img" src="img/bakgrund.jpeg">
-                    <img class="occupation__img" src="img/train.jpg">
+                    <img class="verksamhetBild" src="img/bakgrund.jpeg">
+                    <img class="verksamhetBild" src="img/train.jpg">
                 </div>
                 <div class="slider-progress">
                     <div class="progress"></div>
                 </div>
             </div>
-            <div data-aos="zoom-in-right" class="occupation__box">
-                <div class="occupation__textcontainer">
-                    <h2 class="occupation__h2">Verksamhet</h2>
-                    <h3 class="occupation__h3">Specialiserade på blablablabla</h3>
-                    <p class="occupation__p">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula
+            <div data-aos="zoom-in-right" class="textboxVerk">
+                <div class="textHolder">
+                    <h3 class="verksamhet_h3">Verksamhet</h3>
+                    <h2 class="verksamhet_h2">Specialiserade på blablablabla</h2>
+                    <p class="verksamhet_p">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula
                         porta felis euismod semper. Curabitur blandit tempus porttitor. Sed posuere consectetur est at
                         lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia
                         quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
@@ -107,69 +105,60 @@
                     </p>
                 </div>
             </div>
-            <div class="occupation__button-container ">
-                <button class="occupation__button-left "> &lt;</button>
-                <button class="occupation__button-right "> ></button>
+            <div class="buttonholder ">
+                <button class="button-left "> &lt;</button>
+                <button class="button-right "> ></button>
             </div>
         </div>
     </section>
 
-    <hr class="separator__img">
+    <hr class="separator1">
 
-    <div class="grid__presentation mb30">
-        <div class="presentation__text">Om oss</div>
-        <div class="presentation__line"></div>
+    <div class="grid mb30">
+        <div class="textvidstreck">Om oss</div>
+        <div class="streck"></div>
     </div>
     <section id="omoss">
 
-        <div class="showcase__wrapper">
-            <div class="showcase__container">
-
-                <div class="showcase__text mb50">
-                    <h1 class="showcase__h1">
-                        SPECIALISERADE FÖR VÅRA KLIENTER
-                    </h1>
-                    <h2 class="showcase__h2">Donec id elit non mi porta gravida at eget metus.</h2>
-                    <p class="showcase__p">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta
-                        felis euismod semper. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
-                        Aenean eu leo quam. Pellentesque ornare sem lacinia
-                        quam venenatis vestibulum.</p>
-                    </div>
-                    <img src="./img/happy-group-of-people.jpg" class="showcase__image mb50" alt="">
+        <div class="showcaseHolder">
+            <div class="showcaseText mb50">
+                <h1 class="omoss_h1">
+                    SPECIALISERADE FÖR VÅRA KLIENTER
+                </h1>
+                <h2 class="omoss_h2">Donec id elit non mi porta gravida at eget metus.</h2>
+                <p class="omoss_p">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta
+                    felis euismod semper. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
+                    Aenean eu leo quam. Pellentesque ornare sem lacinia
+                    quam venenatis vestibulum.</p>
             </div>
-            <div class="showcase__container">
-
-                <img src="./img/happy-team.jpg" class="showcase__image mb60" alt="">
-                <div class="showcase__text mb20 ">
-                    <h1 class="showcase__h1">SEDAN 2005</h1>
-                    <h2 class="showcase__h2">Donec id elit non mi porta gravida at eget metus.</h2>
-                    <p class="showcase__p">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta
-                        felis euismod semper. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
-                        Aenean eu leo quam. Pellentesque ornare sem lacinia
-                        quam venenatis vestibulum.</p>
-                </div>
+            <div class="showcaseImage mb30"></div>
+            <div class="showcaseImage mb60"></div>
+            <div class="showcaseText mb20 ">
+                <h1 class="omoss_h1">SEDAN 2005</h1>
+                <h2 class="omoss_h2">Donec id elit non mi porta gravida at eget metus.</h2>
+                <p class="omoss_p">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta
+                    felis euismod semper. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
+                    Aenean eu leo quam. Pellentesque ornare sem lacinia
+                    quam venenatis vestibulum.</p>
             </div>
 
-            <div class="showcase__container">
-                <div class="showcase__text mb80">
-                    <h1 class="showcase__h1">VÅRA ANSTÄLLDA</h1>
-                    <h2 class="showcase__h2">Donec id elit non mi porta gravida at eget metus.</h2>
-                    <p class="showcase__p">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta
-                        felis euismod semper. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
-                        Aenean eu leo quam. Pellentesque ornare sem lacinia
-                        quam venenatis vestibulum.</p>
-                </div>
-                <img src="./img/team.jpg" class="showcase__image mb20 " alt="">
+            <div class="showcaseText mb80">
+                <h1 class="omoss_h1">VÅRA ANSTÄLLDA</h1>
+                <h2 class="omoss_h2">Donec id elit non mi porta gravida at eget metus.</h2>
+                <p class="omoss_p">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta
+                    felis euismod semper. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
+                    Aenean eu leo quam. Pellentesque ornare sem lacinia
+                    quam venenatis vestibulum.</p>
             </div>
-            
+            <div class="showcaseImage"></div>
         </div>
 
     </section>
 
 
     <div class="grid" style="margin-top: 60px;">
-        <div class="presentation__text">Kontor</div>
-        <div class="presentation__line"></div>
+        <div class="textvidstreck">Kontor</div>
+        <div class="streck"></div>
     </div>
     <section id="kontor">
         <div class="grid-omoss" style="margin-top: 40px;">
@@ -189,8 +178,8 @@
 
     <section id="kontakt">
         <div class="grid" style="margin-top: 60px; margin-bottom: 30px;">
-            <div class="presentation__text">Kontakt</div>
-            <div class="presentation__line"></div>
+            <div class="textvidstreck">Kontakt</div>
+            <div class="streck"></div>
         </div>
         <div class="section-container">
             <div class="advokater">
