@@ -1,9 +1,9 @@
 .bullet_container {
     display: flex;
     position: relative;
-    margin-top: 112px;
-    margin-left: 623px;
-    margin-bottom: 90px;
+    margin:90px auto 90px auto;
+    grid-column:1/3;
+
 
 }
 

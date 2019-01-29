@@ -101,19 +101,19 @@ $(document).ready(function() {
 
 
 //imagebuttons
-let textToChange = document.getElementsByClassName('sectionb_p')[0];
-let img3 = document.getElementsByClassName('imgbutton3');
-let img1 = document.getElementsByClassName('imgbutton')[0];
-let img2 = document.getElementsByClassName('imgbutton2');
+let textToChange = document.getElementsByClassName('testimones__p')[0];
+let img3 = document.getElementsByClassName('bullet__button3');
+let img1 = document.getElementsByClassName('bullet__button')[0];
+let img2 = document.getElementsByClassName('bullet__button2');
 
 
 
 
 
 function changeText() {
-    document.getElementById('imgbutton').style.backgroundColor = '#0075c8';
-    document.getElementById('imgbutton3').style.backgroundColor = 'lightgrey';
-    document.getElementById('imgbutton2').style.backgroundColor = 'lightgrey';
+    document.getElementById('bullet__button').style.backgroundColor = '#0075c8';
+    document.getElementById('bullet__button3').style.backgroundColor = 'lightgrey';
+    document.getElementById('bullet__button2').style.backgroundColor = 'lightgrey';
 
 
     textToChange.innerHTML = "Vad säger våra kunder? <br> blablablab lablabla blablablablab lablablabla blablabalbal bablabla djaiosdja djaoisjda blabal"
@@ -121,9 +121,9 @@ function changeText() {
 }
 
 function changeText2() {
-    document.getElementById('imgbutton').style.backgroundColor = 'lightgrey';
-    document.getElementById('imgbutton3').style.backgroundColor = 'lightgrey';
-    document.getElementById('imgbutton2').style.backgroundColor = '#0075c8'
+    document.getElementById('bullet__button').style.backgroundColor = 'lightgrey';
+    document.getElementById('bullet__button3').style.backgroundColor = 'lightgrey';
+    document.getElementById('bullet__button2').style.backgroundColor = '#0075c8'
 
 
     textToChange.innerHTML = "Vad säger våra kunder? <br> Jättebra kommunikation!!<br> //Nöjd Kund"
@@ -131,9 +131,9 @@ function changeText2() {
 }
 
 function changeText3() {
-    document.getElementById('imgbutton').style.backgroundColor = 'lightgrey';
-    document.getElementById('imgbutton3').style.backgroundColor = '#0075c8';
-    document.getElementById('imgbutton2').style.backgroundColor = 'lightgrey';
+    document.getElementById('bullet__button').style.backgroundColor = 'lightgrey';
+    document.getElementById('bullet__button3').style.backgroundColor = '#0075c8';
+    document.getElementById('bullet__button2').style.backgroundColor = 'lightgrey';
 
 
     textToChange.innerHTML = "Vad säger våra kunder? <br> Utmärkt service, rekommenderas starkt. Tack för er hjälp.<br> //Fortfarande fri"

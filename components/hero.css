@@ -2,15 +2,16 @@
     /* display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 0.2fr); */
-    padding: 0 90px 160px 90px;
+   margin-bottom:160px;
 
 }
 
 .hero__start {
     position: relative;
-    max-width: 1260px;
+    max-width: 1440px;
     width: 100%;
-
+    padding: 70px 90px 0 90px;
+    margin:0 auto;
 
 }
 
@@ -23,7 +24,7 @@
 .hero__box {
     position: absolute;
     bottom: -30px;
-    left: -30px;
+    left: 60px;
     background-color: #0075c8;
     color: #fff;
 
@@ -52,7 +53,7 @@
 }
 
 .hero__h3:before {
-    height: 3px;
+    height: 4px;
     width: 40px;
     background-color: #fff;
     left: 0;

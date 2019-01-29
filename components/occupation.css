@@ -22,7 +22,9 @@
     padding-bottom: 62px;
     padding-right: 64px;
 }
-
+#verksamhet{
+    margin-bottom:150px;
+}
 .occupation__h2 {
 
 text-transform: uppercase;
