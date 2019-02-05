@@ -2,16 +2,18 @@
     position: absolute;
     box-shadow: 0 2px 29px 0 rgba(0, 0, 0, 0.11);
     left: 605px;
-    top: 237px;
+    top: 250px;
     margin-right: 248px;
     background-color: white;
-    width: 456px;
-  height: 350px;
+    width: 566px;
+  height: 421px;
+
 
 }
 .sliderPosition {
     position: relative;
-    width: 100%;
+    width: 661px    ;
+    height: 800px;
     grid-column: 3/8;
     grid-row: 1/8;
 }
@@ -21,6 +23,7 @@
     padding-left: 80px;
     padding-bottom: 62px;
     padding-right: 64px;
+    
 }
 #verksamhet{
     margin-bottom:150px;
@@ -29,7 +32,7 @@
 
 text-transform: uppercase;
     font-family: Roboto;
-    font-size: 12px;  
+    font-size: 14px;  
     margin-bottom:8px;  
 
 
@@ -51,7 +54,7 @@ text-transform: uppercase;
     font-weight: bold;
 
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 5px;
     margin-top: 0;
 }
@@ -60,8 +63,8 @@ text-transform: uppercase;
     
     margin-top: 20px;
     font-family: Muli;
-    font-size: 14px;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 100;
 
 }
 

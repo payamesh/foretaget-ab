@@ -1,0 +1,89 @@
+
+.section-employees {
+    width: 75%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+.employees__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 0.5fr));
+    grid-template-rows: repeat(2, 0.5fr);
+}
+
+.employee__profile {
+   
+    text-align: center;
+    justify-content: center;
+}
+
+.employee__img{
+background-size:contain;
+   max-width:218px;
+   max-height:218px
+  
+}
+.employee__textbox {
+
+    width: 100%;
+    position: relative;
+    padding:10px;
+    text-align: left;
+}
+.employee__textbox::before {
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "_";
+    height: 5px;
+    width: 10px;
+    color: #0075c8;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.employee__textbox:hover {
+
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1);
+    padding: 15px 15px;
+
+    bottom: 15%;
+
+    height: 100%;
+
+    background-color: #fff;
+}
+.employee__textbox h3 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.employee__textbox p {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.employee__textbox:hover>.employee__contact {
+    display: block;
+
+}
+
+.employee__contact {
+    display: none;
+    text-align: left;
+
+}
+.employee__contact p{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.employee__email {
+    color: #0075c8;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 900;
+
+}

@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 0.2fr);
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 .presentation__text {
     grid-column: 3;
@@ -14,7 +16,7 @@
 
 .presentation__line {
     align-self: center;
-    grid-column: 4/11;
+    grid-column: 4/12;
     background: #0075c8;
     color: white;
     border-radius: 1000px;
