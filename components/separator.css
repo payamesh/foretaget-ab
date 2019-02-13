@@ -6,6 +6,11 @@
     background: url(../img/building.jpg) 0 0;
 }
 
+@media(max-width:992px){
+    .separator__img{
+        width:95%;
+    }
+}
 
 
 @media(max-width:768px) {

@@ -1,9 +1,9 @@
 .slider__container {
     position: relative;
-    margin-top: 4%;
+    margin-top: 2%;
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: repeat(13, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(7, 100px);
 }
 
@@ -45,8 +45,13 @@
 }
 
 @media(max-width:768px) {
+    .slider__container{
+        margin-left: 9%;
+    }
 
-
+    .slider-progress{
+        display:none;
+    }
     .sliderPosition {
         grid-column: 1/12;
         width: 100%;

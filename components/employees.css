@@ -30,7 +30,7 @@ background-size:contain;
     text-align: left;
 }
 .employee__textbox::before {
-    left: 0;
+    left: -2px;
     top: 0;
     position: absolute;
     content: "_";
@@ -60,6 +60,7 @@ background-size:contain;
 
 .employee__textbox p {
     font-family: Roboto;
+font-style: italic;
     font-size: 15px;
     font-weight: 300;
 
@@ -75,9 +76,11 @@ background-size:contain;
 
 }
 .employee__contact p{
+    padding:9px 0px;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
+
 
 }
 .employee__email {
@@ -86,4 +89,21 @@ background-size:contain;
     font-size: 14px;
     font-weight: 900;
 
+}
+
+@media(max-width:992px){
+    .linkedin-logo{
+        display:none;
+    }
+
+    .section-employees{
+        width:90%;
+
+    }
+    .employees__grid{
+        grid-template-columns: repeat(4, minmax(100px, 0.5fr));
+    }
+    .employee__img{
+        max-width: 140px;
+    }
 }

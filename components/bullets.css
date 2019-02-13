@@ -44,8 +44,11 @@
 
 
 @media(max-width:768px) {
+    .bullet_container{
+        max-width: 50%;
+    }
 .bullet__button {
-    height: 15px;
+    height: 25px;
     width: 100%;
     grid-column: 4/6;
     grid-row: 7;
@@ -57,7 +60,7 @@
 
 .bullet__button2 {
     justify-self: center;
-    height: 15px;
+    height: 25px;
     width: 100%;
     grid-column: 6/8;
     grid-row: 7;
@@ -65,8 +68,8 @@
 }
 
 .bullet__button3 {
-    margin-left: 6px;
-    height: 15px;
+    margin-left: 0px;
+    height: 25px;
     width: 100%;
     grid-column: 8/10;
     grid-row: 7;

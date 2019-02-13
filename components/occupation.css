@@ -70,28 +70,82 @@ text-transform: uppercase;
 
 
 
+@media(max-width:992px){
+    
+    .sliderPosition {
+        width: 550px;
+        grid-column: 2/8
+    }
+
+    .occupation__textcontainer {
+        padding-top:45px;
+        padding-left: 60px;
+        padding-bottom: 52px;
+        padding-right: 44px;
+        
+    }
+    .occupation__box {
+        left: 45%;
+        top: 30%;
+        margin-right: 0;
+        width: 440px;
+        height: 400px;
+    }
+    .occupation__h2::before {
+        width: 40px;
+        left: 0px;
+        top: 13%;
+    }
+}
 
 @media(max-width:768px) {
 
+        
+    .sliderPosition {
+        width: 350px;
+        grid-column: 2/8;
+        margin-bottom:20%;
+    }
+
+    .occupation__textcontainer {
+        padding-top: 25px;
+        padding-left: 40px;
+        padding-bottom: 32px;
+        padding-right: 25px;
+        
+    }
     .occupation__box {
-        height: auto;
-        grid-column: 8/13;
+        left: 27%;
+        transform: translateX(30%);
+        width: 60%;
 
+        top: 65%;
+        margin-right: 0;
+        max-width: 380px;
+        max-height: 380px;
     }
-    .occupation__h3 {
-        font-size: 13px;
+    .occupation__h2::before {
+        width: 40px;
+        left: 0px;
+        top: 13%;
     }
-
-    .occupation__p {
-        font-size: 11px;
-    }
-
-    .occupation__h2 {
-        font-size: 10px;
-
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-bottom: 5px;
-    }
+  #verksamhet{
+      margin-bottom:40%;
+  }
+  .occupation__h2{
+      font-size: 2vw;
+  }
+  .occupation__h2::before{
+    width: 30px;
+    left: 0px;
+    top: 8%;
+  
+  }
+  .occupation__h3{
+    font-size: 2vw;
+  }
+  .occupation__p{
+      font-size: 16px;
+  }
 
 }

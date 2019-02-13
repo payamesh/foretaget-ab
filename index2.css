@@ -153,11 +153,7 @@ table {
 
 
 
-.section-employees {
-    width: 70%;
-    max-width: 950px;
-    margin: 0 auto;
-}
+
 
 
 
@@ -303,7 +299,67 @@ table {
     color: #96ceb4
 }
 
+.advokater {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 0.5fr));
+    grid-template-rows: repeat(2, 0.5fr);
+}
 
+.advokat {
+    max-width: 200px;
+    max-height: 300px;
+    text-align: center;
+    justify-content: center;
+}
+
+.advokatbox {
+    margin-left: 20px;
+    width: 150px;
+    position: relative;
+}
+
+.advokatbox::before {
+    left: 4px;
+    top: -11px;
+    position: absolute;
+    content: "_";
+    color: #0075c8;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.advokatbox h3 {
+    font-size: 0.8em;
+    margin-bottom: 0.2rem;
+
+}
+
+.advokatbox p {
+    font-size: 0.6em;
+
+}
+
+.advokatbox:hover {
+    transform: scale(1.30);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 1);
+    padding: 0px 5px;
+    bottom: 15%;
+    background-color: #fff;
+}
+
+.advokat_kontakt {
+    display: none;
+    text-align: center;
+}
+
+.advokatbox:hover>.advokat_kontakt {
+    display: block;
+}
+
+.kontakt_epost {
+    color: #0075c8;
+    font-size: 0.6em;
+}
 
 .footerbox {
     height: 100px;
@@ -364,7 +420,7 @@ table {
 
 
 
-
+/* 
 
 @media(max-width:768px) {
 
@@ -537,13 +593,10 @@ table {
 
 
 
-    /* imports */
+  
     @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
-    /* colors */
-    /* variables */
-    /* mixins */
-    /* resets and base styles */
+   
     * {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -575,7 +628,7 @@ table {
         opacity: 0.8;
     }
 
-    /* nav toggle */
+
     .nav-toggle {
 
         -webkit-user-select: none;
@@ -650,7 +703,7 @@ table {
         transform: rotate(-45deg);
     }
 
-    /* nav */
+
     .nav {
         -webkit-transition: left 0.5s ease;
         -moz-transition: left 0.5s ease;
@@ -686,8 +739,8 @@ table {
     }
 
 
-}
-
+} 
+/* 
 @media(max-width:361px) {
     a {
         font-size: 15px;
@@ -703,4 +756,4 @@ table {
     .advokater {
         grid-template-columns: repeat(2, minmax(110px, 1fr));
     }
-}
+} */

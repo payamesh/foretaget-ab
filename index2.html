@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Muli:200|Roboto:300i,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200|Roboto:300i,400,500,700,900|Source+Sans+Pro:700" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica" rel="stylesheet">
     <link rel="stylesheet" href="index2.css">
     <link rel="stylesheet" href="./components/components.css">
     <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -30,7 +33,7 @@
             <li><a href="#omoss">OM OSS /</a></li>
             <li><a href="#kontakt">KONTAKT</a></li>
         </ul>
-        <a class="nav-company-name" href="_blank"><img style="height: 56%; margin-top:5px;" src="./img/logo2.svg" alt="logotyp"></a>
+        <a class="nav-company-name" href="_blank">Företag AB</a>
     
     </nav>
     <section id="start" class="grid-section-a">
@@ -46,7 +49,7 @@
                         <p class="hero__p">Vi är en världens ledande företag specialiserade på saker företag gör.</p>
 
                     </div>
-                    <a class="hero__button" href="#omoss">LÄS MER > </a>
+                    <a class="hero__button" href="#omoss">LÄS MER <span class="hero__button-arrow"><i class="fas fa-angle-right"></i></span> </a>
                     
                 </div>
             </div>
@@ -64,7 +67,7 @@
                     blablabalbal bablabla djaiosdja
                     djaoisjda blabal"</p>
                 <hr class="testimones__line">
-                <a class="testimones__button" href="#kontakt">Länktext <span class="testimones__button-arrow">></span> </a>
+                <a class="testimones__button" href="#kontakt">Länktext <span class="testimones__button-arrow"><i class="fas fa-angle-right"></i></span> </a>
              </div>
             
             <img class="testimones__img" src="./img/di-gasell.png" alt="">
@@ -81,12 +84,13 @@
 
     <section id="verksamhet">
         <div style="margin-top: 90px;"> </div>
-        <div data-aos="zoom-in-up" class="grid__presentation">
+        <div class="grid__presentation">
             <div class="presentation__text">Verksamhet</div>
             <div class="presentation__line"></div>
         </div>
         <div class="slider__container">
-            <div data-aos="zoom-right" class="sliderPosition">
+            
+            <div  class="sliderPosition">
                 <div class="siema">
                     <img class="occupation__img" src="img/bakgrund.jpeg">
                     <img class="occupation__img" src="img/train.jpg">
@@ -94,8 +98,12 @@
                 <div class="slider-progress">
                     <div class="progress"></div>
                 </div>
+                <div class="occupation__button-container ">
+                        <button class="occupation__button-left"> <i class="fas fa-angle-left"></i></button>
+                        <button class="occupation__button-right"><i class="fas fa-angle-right"></i></button>
+                    </div>
             </div>
-            <div data-aos="zoom-in-right" class="occupation__box">
+            <div class="occupation__box">
                 <div class="occupation__textcontainer">
                     <h2 class="occupation__h2">Verksamhet</h2>
                     <h3 class="occupation__h3">Specialiserade på blablablabla</h3>
@@ -108,10 +116,7 @@
                     </p>
                 </div>
             </div>
-            <div class="occupation__button-container ">
-                <button class="occupation__button-left "> &lt;</button>
-                <button class="occupation__button-right "> ></button>
-            </div>
+            
         </div>
     </section>
 
@@ -173,12 +178,12 @@
         <div class="presentation__line"></div>
     </div>
     <section id="kontor">
-        <div class="grid-omoss" style="margin-top: 40px;">
-            <div class="textboxKontor">
+        <div class="grid-office">
+            <div class="office__textbox">
                 <div style="width:100%;" class="textHolder">
-                    <h4 class="kontor_h4">HITTA TILL OSS</h4>
-                    <h2 class="kontor_h2">Vårt fina kontor ligger beläget i centrala Stockholm</h2>
-                    <p class="kontor_p">Åsögatan 119 <br> 111 35 Stockholm <br> <br> 08-765 65 65 <br> <a style="color:blue;">info@foretagab.se</a>
+                    <h4 class="office__h4">HITTA TILL OSS</h4>
+                    <h2 class="office__h2">Vårt fina kontor ligger beläget i centrala Stockholm</h2>
+                    <p class="office__p">Åsögatan 119 <br> 111 35 Stockholm <br> <br> 08-765 65 65 <br> <a style="color:blue;">info@foretagab.se</a>
                         <br><br> Organisationsnummer: 556677-8899</p>
                 </div>
             </div>
