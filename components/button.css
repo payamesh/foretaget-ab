@@ -93,7 +93,7 @@ text-transform: uppercase;
 }
 
 
-@media(max-width:992px){
+@media(max-width:1024px){
     .occupation__button-container{
         left:2%;
         width:100%;
@@ -137,6 +137,20 @@ grid-column: 7;
     
 }
 
+@media(max-width:600px){
+    .testimones__button{
+        width:40%;
+    }
+}
+@media(max-width:425px){
+    .hero__button{
+        left: 60%;
+    width: 40%;
+    }
+    .testimones__button{
+        width: 50%;
+    }
+}
 @media(max-width:361px) {
     a {
         font-size: 15px;

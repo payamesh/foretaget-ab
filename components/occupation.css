@@ -70,7 +70,7 @@ text-transform: uppercase;
 
 
 
-@media(max-width:992px){
+@media(max-width:1024px){
     
     .sliderPosition {
         width: 550px;
@@ -115,8 +115,8 @@ text-transform: uppercase;
         
     }
     .occupation__box {
-        left: 27%;
-        transform: translateX(30%);
+        left: 19%;
+        transform: translateX(33%);
         width: 60%;
 
         top: 65%;
@@ -145,7 +145,31 @@ text-transform: uppercase;
     font-size: 2vw;
   }
   .occupation__p{
-      font-size: 16px;
+      font-size: 14px;
   }
 
+}
+
+@media(max-width:600px){
+    .sliderPosition{
+        height:600px;
+    }
+    .occupation__box{
+        top:35%;
+    }
+    #verksamhet{
+        margin-bottom:10%;
+    }
+}
+
+@media(max-width:425px){
+    .occupation__h2{
+        font-size: 2.5vw;
+    }
+    .occupation__p {
+        font-size: 12px;
+    }
+    .occupation__h3 {
+        font-size: 3vw;
+    }
 }

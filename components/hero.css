@@ -72,7 +72,7 @@
 
 
 
-@media(max-width:992px){
+@media(max-width:1024px){
     .hero__start{
         padding:5%;
     }
@@ -114,7 +114,42 @@ bottom: -25px;
 left:unset;
 position: unset;
 }
+.grid-section-a{
+    margin-bottom:0px;
+}
 
+.hero__textcontainer{
+    padding: 25px 30px 55px 30px;
+}
+.hero__h3{
+    font-size:2vw;
+}
+.hero__h3:before{
+    width:40px;
+    left:-30px;
+}
 
+}
 
+@media(max-width:600px){
+    .hero__h3 {
+        font-size: 3vw;
+    }
+    .hero__h3:before {
+    width: 50px;
+    left: -30px;
+    transform: translateY(-21%);
+    }
+    .hero__p{
+        font-size:4vw;
+    }
+}
+@media(max-width:425px){
+    .hero__h3:before{
+        left:-15px;
+        width:30px;
+    }
+    .hero__textcontainer{
+        padding:15px 25px 50px 15px;
+    }
 }

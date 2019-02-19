@@ -91,7 +91,7 @@ font-style: italic;
 
 }
 
-@media(max-width:992px){
+@media(max-width:1024px){
     .linkedin-logo{
         display:none;
     }
@@ -105,5 +105,28 @@ font-style: italic;
     }
     .employee__img{
         max-width: 140px;
+    }
+}
+
+@media(max-width:600px){
+    .employee__img {
+        max-width: 100px;
+    }
+
+    .employee__textbox{
+        width:100%;
+        text-align: center;
+    }
+    .employee__textbox::before{
+        left:10px;
+    }
+}
+
+@media (max-width: 600px){
+    .employee__img {
+        max-width: 85px;
+    }
+    .employees__grid {
+        grid-template-columns: repeat(4, minmax(85px, 0.5fr));
     }
 }

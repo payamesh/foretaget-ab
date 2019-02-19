@@ -60,7 +60,7 @@
     color: #000000;
 }
 
-@media(max-width:992px){
+@media(max-width:1024px){
     .grid-office{
         width:90%;
         margin:0 auto;
@@ -76,16 +76,38 @@
         color: #96ceb4
     }
     .office__textbox{
-        width:50%;
+        width:80%;
         margin:0 auto;
         text-align: center;
     }
     .office__h4:before{
-        left:10%;
+        left:25%;
         width:40px;
     }
     .textHolder{
         padding: 20px;
     }
+    .office__h2{
+        font-size:20px;
+    }
+}
+@media(max-width:600px){
+    .smallmap{
+        width:400px;
+    }
 
+    .office__h4:before{
+            left:15%;
+    }
+}
+@media(max-width:425px){
+    .office__h4:before{
+        left:0;
+    }
+    .office__h4{
+        font-size:18px;
+    }
+    .smallmap{
+        width: 380px;
+    }
 }
