@@ -130,11 +130,7 @@ table {
     border-spacing: 0;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 0.2fr);
-}
+
 
 
 

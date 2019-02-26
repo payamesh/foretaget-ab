@@ -1,7 +1,7 @@
 .grid-office {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin-top:40px;
+    margin-top: 40px;
 }
 
 .office__textbox {
@@ -19,15 +19,17 @@
     max-height: 382px;
     color: #96ceb4
 }
+
 .textHolder {
     padding: 60px 70px 60px 0;
 
 }
+
 .office__h4 {
     position: relative;
     font-family: Roboto;
-  font-size: 14px;
-  font-weight: 500;
+    font-size: 14px;
+    font-weight: 500;
     color: #000000;
 }
 
@@ -37,8 +39,8 @@
     position: absolute;
     content: "";
     background-color: #0075c8;
-    width:50px;
-    height:4px;
+    width: 50px;
+    height: 4px;
 }
 
 .office__h2 {
@@ -60,54 +62,62 @@
     color: #000000;
 }
 
-@media(max-width:1024px){
-    .grid-office{
-        width:90%;
-        margin:0 auto;
-        display:flex;
+@media(max-width:1024px) {
+    .grid-office {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
         flex-direction: column;
     }
 
     .smallmap {
-        margin:0 auto;
+        margin: 0 auto;
         width: 473px;
         grid-column: 7/10;
         max-height: 382px;
         color: #96ceb4
     }
-    .office__textbox{
-        width:80%;
-        margin:0 auto;
+
+    .office__textbox {
+        width: 80%;
+        margin: 0 auto;
         text-align: center;
     }
-    .office__h4:before{
-        left:25%;
-        width:40px;
-    }
-    .textHolder{
-        padding: 20px;
-    }
-    .office__h2{
-        font-size:20px;
-    }
-}
-@media(max-width:600px){
-    .smallmap{
-        width:400px;
+
+    .office__h4:before {
+        left: 25%;
+        width: 40px;
     }
 
-    .office__h4:before{
-            left:15%;
+    .textHolder {
+        padding: 20px;
+    }
+
+    .office__h2 {
+        font-size: 20px;
     }
 }
-@media(max-width:425px){
-    .office__h4:before{
-        left:0;
+
+@media(max-width:600px) {
+    .smallmap {
+        width: 400px;
     }
-    .office__h4{
-        font-size:18px;
+
+    .office__h4:before {
+        left: 15%;
     }
-    .smallmap{
+}
+
+@media(max-width:425px) {
+    .office__h4:before {
+        left: 0;
+    }
+
+    .office__h4 {
+        font-size: 18px;
+    }
+
+    .smallmap {
         width: 380px;
     }
 }

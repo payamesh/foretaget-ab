@@ -1,19 +1,38 @@
-
-
 .footergrid {
     display: grid;
-    margin-top:80px;
-    padding-bottom:30px;
+    margin-top: 80px;
+    padding-bottom: 30px;
     grid-template-columns: repeat(6, 1fr);
 }
+
 .footerbox {
     max-height: 100px;
-    max-width:100px;
+    max-width: 100px;
     background-color: lightgray;
     margin-right: 5px;
 
 }
-.footerbox img{
-    height:100px;
-    width:100px;
+
+.footerbox img {
+    height: 100px;
+    width: 100px;
+}
+
+@media(max-width:425px) {
+    .footergrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .footerbox {
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    .footerbox img {
+        height: 50px;
+        width: 50px;
+    }
+
 }

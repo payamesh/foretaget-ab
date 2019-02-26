@@ -6,37 +6,46 @@
     margin-right: 248px;
     background-color: white;
     width: 566px;
-  height: 421px;
+    height: 421px;
 
 
 }
+
 .sliderPosition {
     position: relative;
-    width: 661px    ;
+    width: 661px;
     height: 800px;
     grid-column: 3/8;
     grid-row: 1/8;
 }
 
+.occupation__img {
+    height: 800px;
+    width: 90%;
+}
+
 .occupation__textcontainer {
-    padding-top:65px;
+    padding-top: 65px;
     padding-left: 80px;
     padding-bottom: 62px;
     padding-right: 64px;
-    
+
 }
-#verksamhet{
-    margin-bottom:150px;
+
+#verksamhet {
+    margin-bottom: 150px;
 }
+
 .occupation__h2 {
 
-text-transform: uppercase;
+    text-transform: uppercase;
     font-family: Roboto;
-    font-size: 14px;  
-    margin-bottom:8px;  
+    font-size: 14px;
+    margin-bottom: 8px;
 
 
 }
+
 .occupation__h2::before {
     width: 60px;
     height: 4px;
@@ -50,6 +59,7 @@ text-transform: uppercase;
     font-weight: bolder;
 
 }
+
 .occupation__h3 {
     font-weight: bold;
 
@@ -60,7 +70,7 @@ text-transform: uppercase;
 }
 
 .occupation__p {
-    
+
     margin-top: 20px;
     font-family: Muli;
     font-size: 16px;
@@ -70,20 +80,21 @@ text-transform: uppercase;
 
 
 
-@media(max-width:1024px){
-    
+@media(max-width:1024px) {
+
     .sliderPosition {
         width: 550px;
         grid-column: 2/8
     }
 
     .occupation__textcontainer {
-        padding-top:45px;
+        padding-top: 45px;
         padding-left: 60px;
         padding-bottom: 52px;
         padding-right: 44px;
-        
+
     }
+
     .occupation__box {
         left: 45%;
         top: 30%;
@@ -91,6 +102,7 @@ text-transform: uppercase;
         width: 440px;
         height: 400px;
     }
+
     .occupation__h2::before {
         width: 40px;
         left: 0px;
@@ -100,11 +112,11 @@ text-transform: uppercase;
 
 @media(max-width:768px) {
 
-        
+
     .sliderPosition {
         width: 350px;
         grid-column: 2/8;
-        margin-bottom:20%;
+        margin-bottom: 20%;
     }
 
     .occupation__textcontainer {
@@ -112,8 +124,9 @@ text-transform: uppercase;
         padding-left: 40px;
         padding-bottom: 32px;
         padding-right: 25px;
-        
+
     }
+
     .occupation__box {
         left: 19%;
         transform: translateX(33%);
@@ -124,52 +137,84 @@ text-transform: uppercase;
         max-width: 380px;
         max-height: 380px;
     }
+
     .occupation__h2::before {
         width: 40px;
         left: 0px;
         top: 13%;
     }
-  #verksamhet{
-      margin-bottom:40%;
-  }
-  .occupation__h2{
-      font-size: 2vw;
-  }
-  .occupation__h2::before{
-    width: 30px;
-    left: 0px;
-    top: 8%;
-  
-  }
-  .occupation__h3{
-    font-size: 2vw;
-  }
-  .occupation__p{
-      font-size: 14px;
-  }
+
+    #verksamhet {
+        margin-bottom: 40%;
+    }
+
+    .occupation__h2 {
+        font-size: 2vw;
+    }
+
+    .occupation__h2::before {
+        width: 30px;
+        left: 0px;
+        top: 8%;
+
+    }
+
+    .occupation__h3 {
+        font-size: 2vw;
+    }
+
+    .occupation__p {
+        font-size: 14px;
+    }
 
 }
 
-@media(max-width:600px){
-    .sliderPosition{
-        height:600px;
+@media(max-width:600px) {
+    .sliderPosition {
+        height: 600px;
     }
-    .occupation__box{
-        top:35%;
+
+    .occupation__box {
+        top: 35%;
     }
-    #verksamhet{
-        margin-bottom:10%;
+
+    #verksamhet {
+        margin-bottom: 10%;
     }
 }
 
-@media(max-width:425px){
-    .occupation__h2{
+@media(max-width:425px) {
+    .occupation__h2 {
         font-size: 2.5vw;
     }
+
     .occupation__p {
-        font-size: 12px;
+        font-size: 11px;
     }
+
     .occupation__h3 {
         font-size: 3vw;
     }
+}
+
+@media(max-width:360px) {
+    .sliderPosition {
+        width: 500px;
+        height: 500px;
+    }
+
+    .occupation__box {
+        left: -28%;
+        transform: translateX(33%);
+        width: 83%;
+        top: 50%;
+        margin-right: 0;
+        max-width: 380px;
+        max-height: 321px;
+    }
+
+    .occupation__img {
+        height: 500px;
+    }
+
 }

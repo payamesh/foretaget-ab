@@ -1,13 +1,14 @@
 .grid__testimones {
-   display:flex;
-   flex-direction: row;
+    display: flex;
+    flex-direction: row;
 
 }
 
-.testimones{
-    max-width:840px;
-    margin:0 auto;
+.testimones {
+    max-width: 840px;
+    margin: 0 auto;
 }
+
 .testimones__box {
     position: relative;
     background-color: #0075c8;
@@ -16,11 +17,11 @@
     font-family: Roboto;
     font-size: 20px;
     font-weight: 100;
-    max-width:446px;
-    min-height:346px;
+    max-width: 446px;
+    min-height: 346px;
 }
 
-.testimones__quote{
+.testimones__quote {
     font-family: 'IM Fell Double Pica', serif;
     font-size: 144px;
     font-weight: 700;
@@ -54,29 +55,32 @@
     width: 118px;
 
 }
+
 .testimones__img {
-    margin-left:10%;
+    margin-left: 10%;
     width: 286px;
     height: 317px;
 }
 
 
 
-@media(max-width:1024px){
-    .grid__testimones{
+@media(max-width:1024px) {
+    .grid__testimones {
         width: 73%;
-      
+
         margin: 0 auto;
 
     }
+
     .testimones__box {
-      
-        max-width:346px;
-        
+
+        max-width: 346px;
+
     }
+
     .testimones__img {
-        margin-top:3%;
-        margin-left:8%;
+        margin-top: 3%;
+        margin-left: 8%;
         width: 320px;
         height: 320px;
     }
@@ -88,44 +92,49 @@
         margin-top: 120px;
     }
 
-    .grid__testimones{
+    .grid__testimones {
         flex-flow: column;
     }
+
     .testimones__box {
         max-width: 100%;
     }
+
     .testimones__line {
         width: 75%;
         bottom: 35px;
     }
+
     .testimones__img {
-        display:none;
+        display: none;
     }
-    .testimones__p{
+
+    .testimones__p {
         padding-left: 77px;
     }
 }
 
-@media(max-width:600px){
+@media(max-width:600px) {}
 
-}
-
-@media(max-width:425px){
-    .testimones__line{
-        width:50%;
+@media(max-width:425px) {
+    .testimones__line {
+        width: 50%;
     }
-    .testimones__quote{
+
+    .testimones__quote {
 
         margin-left: 7px;
         margin-top: 0px;
     }
-    .testimones__p{
+
+    .testimones__p {
         text-align: center;
         padding-left: 0;
         padding-right: 0;
-        width:80%;
-        margin:0 auto;
+        width: 80%;
+        margin: 0 auto;
     }
+
     .testimones__line {
         width: 70%;
         margin: 0 auto;

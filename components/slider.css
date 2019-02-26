@@ -24,6 +24,7 @@
     opacity: 1;
     z-index: 2;
 }
+
 .siema,
 .siema div {
     height: 100%;
@@ -34,6 +35,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 .timer {
     height: 1%;
     width: 0%;
@@ -45,17 +47,19 @@
 }
 
 @media(max-width:768px) {
-    .slider__container{
+    .slider__container {
         margin-left: 9%;
     }
 
-    .slider-progress{
-        display:none;
+    .slider-progress {
+        display: none;
     }
+
     .sliderPosition {
         grid-column: 1/12;
         width: 100%;
     }
+
     .slider__img {
         /* background-image: url("./img/bakgrund.jpeg"); */
         width: 100%;
