@@ -361,16 +361,7 @@ table {
     font-size: 0.6em;
 }
 
-.footerbox {
-    height: 100px;
-    border: 1px solid black;
-    margin-right: 5px;
-}
 
-.footergrid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-}
 
 .kontor_h4 {
     position: relative;

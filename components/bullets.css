@@ -78,3 +78,10 @@
 
 
 }
+
+@media(max-width:425px){
+    .bullet_container{
+        margin: 50px auto 120px auto;
+    }
+
+}

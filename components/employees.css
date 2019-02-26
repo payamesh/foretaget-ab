@@ -90,6 +90,13 @@ font-style: italic;
     font-weight: 900;
 
 }
+.linkedin-logo {
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    height: 50px;
+    width: 50px;
+}
 
 @media(max-width:1024px){
     .linkedin-logo{

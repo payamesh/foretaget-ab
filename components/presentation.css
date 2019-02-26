@@ -28,7 +28,7 @@
 
     .presentation__text {
         grid-column: 2/3;
-        margin-left: 5px;
+
         margin-right:2%;
     }
     .presentation__line {
@@ -42,7 +42,7 @@
 
     .presentation__text {
         grid-column: 2/4;
-        margin-left: 5px;
+
     }
     .presentation__line {
         grid-column: 4/12;

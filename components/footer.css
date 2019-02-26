@@ -1,0 +1,19 @@
+
+
+.footergrid {
+    display: grid;
+    margin-top:80px;
+    padding-bottom:30px;
+    grid-template-columns: repeat(6, 1fr);
+}
+.footerbox {
+    max-height: 100px;
+    max-width:100px;
+    background-color: lightgray;
+    margin-right: 5px;
+
+}
+.footerbox img{
+    height:100px;
+    width:100px;
+}

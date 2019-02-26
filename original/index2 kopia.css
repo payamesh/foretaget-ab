@@ -484,14 +484,7 @@ margin-bottom:90px;
     color: black;
 }
 
-.linkedin-logo {
-    position: fixed;
-    bottom: 10%;
-    right: 2%;
-    height: 50px;
-    width: 50px;
 
-}
 
 .streck {
     align-self: center;
@@ -869,10 +862,6 @@ margin-bottom:90px;
 @media(max-width:768px) {
     nav {
         height: 60px;
-    }
-
-    .linkedin-logo {
-        display: none;
     }
 
     .grid-section-a {
