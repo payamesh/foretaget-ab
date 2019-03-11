@@ -287,13 +287,7 @@ table {
     background-color: white;
 }
 
-.smallmap {
 
-    width: 100%;
-    grid-column: 7/10;
-    max-height: 300px;
-    color: #96ceb4
-}
 
 .advokater {
     display: grid;
