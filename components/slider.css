@@ -46,6 +46,12 @@
     z-index: 10;
 }
 
+@media(max-width:1028px){
+    .slider__img{
+    width: 70vw;
+        
+    }
+}
 @media(max-width:768px) {
     .slider__container {
         margin-left: 9%;

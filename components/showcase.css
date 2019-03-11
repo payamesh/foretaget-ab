@@ -1,6 +1,6 @@
 .showcase__wrapper {
     position: relative;
-    width: 66%;
+    width: 65%;
     margin: 60px auto;
 
 
@@ -12,7 +12,7 @@
     width: 50%;
     word-wrap: break-word;
     text-align: center;
-    padding: 0px 60px 0px 60px;
+    padding: 0px 50px 0px 50px;
     max-width: 460px;
     max-height: 550px;
     margin: 0 10px 0 10px;
@@ -26,11 +26,16 @@
     height: 100%;
     max-width: 460px;
     max-height: 550px;
+    padding:10px;
 
 
 }
 
 .showcase__container {
+    display: flex;
+
+}
+.showcase__container2 {
     display: flex;
 
 }
@@ -95,14 +100,14 @@
     margin-bottom: -80px;
 }
 
-@media(max-width:1024px) {
+@media(max-width:1124px) {
     .showcase__wrapper {
-        width: 90%;
+        width: 70%;
     }
 
     .showcase__image {
         width: 50%;
-        margin: -1%;
+        margin: 0;
     }
 
     .showcase__text {
@@ -110,7 +115,7 @@
         width: 50%;
         word-wrap: break-word;
         text-align: center;
-        padding: 0px 60px 0px 60px;
+        padding: 0px 30px 0px 52px;
         max-width: 460px;
         max-height: 550px;
         margin: 0 10px 0 10px;
@@ -121,12 +126,46 @@
         left: -62px;
         width: 40px;
     }
+    .mb50{
+        margin-bottom: 20px;
+    }
+    .mb20{
+        margin-bottom: 75px;
+    }
 }
+@media(max-width:1028px){
+    .showcase__wrapper {
+        width: 82%;
+    }
+    .showcase__text{
+        padding: 50px 20px 20px 52px;
+        margin-bottom:20px;
 
+    }
+    .showcase__image{
+        padding:10px;
+    }
+    .showcase__containermb50 {
+        margin-top: -50px;
+    }
+    .showcase__containermb70 {
+        margin-bottom: -70px;
+    }
+}
 @media(max-width:768px) {
+    .showcase__wrapper {
+        width: 90%;
+    }
+    .showcase__containermb50 {
+        margin-top: 0px;
+    }
+    .showcase__containermb70 {
+        margin-bottom: 0px;
+    }
     .showcase__container {
         flex-direction: column;
     }
+   
 
     .showcase__image {
         width: 100%;
@@ -147,8 +186,8 @@
         line-height: 1.5;
     }
 
-    .showcase__wrapper :nth-child(2)>.showcase__image {
-        display: none;
+    .showcase__container2 {
+        flex-direction: column-reverse;
     }
 
     .showcase__h1:before {
@@ -182,6 +221,7 @@
 }
 
 @media(max-width:425px) {
+    
     .showcase__text {
         width: 90%;
     }
