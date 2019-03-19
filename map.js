@@ -1,4 +1,4 @@
-var lat = 34.070;
+/* var lat = 34.070;
 var lon = -118.73;
 var zoom = 15;
 var map;
@@ -40,4 +40,4 @@ function init() {
 
 }
 
-init()
+init() */

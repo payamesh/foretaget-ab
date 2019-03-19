@@ -1,11 +1,13 @@
 .occupation__box {
     position: absolute;
     box-shadow: 0 2px 29px 0 rgba(0, 0, 0, 0.11);
-    left: 605px;
     top: 250px;
-    margin-right: 248px;
+    /* left: 605px;
+    margin-right: 248px; */
+    left:26%;
+    transform: translateX(33%);
     background-color: white;
-    width: 566px;
+    width: 490px;
     height: 421px;
 
 
@@ -13,10 +15,10 @@
 
 .sliderPosition {
     position: relative;
-    width: 661px;
+    width: 50%;
     height: 828px;
-    grid-column: 3/8;
-    grid-row: 1/8;
+margin-left:16.5%;
+
 }
 
 .occupation__img {
@@ -33,7 +35,7 @@
 }
 
 #verksamhet {
-    margin-bottom: 150px;
+    margin-bottom: 300px;
 }
 
 .occupation__h2 {
@@ -78,13 +80,25 @@
 
 }
 
-
+@media(min-width:1300px){
+    .occupation__box{
+        left:35%;
+    }
+    .sliderPosition{
+        width: 50%;
+    }
+    
+}
 
 @media(max-width:1024px) {
+    .occupation__img{
+        height:828px;
+        width: 661px;
+    }
 
     .sliderPosition {
     width: 60vw;
- 
+        margin-left:0;
         grid-column: 2/8
     }
 
@@ -93,11 +107,16 @@
         padding-left: 60px;
         padding-bottom: 52px;
         padding-right: 44px;
+        
+        left: 605px;
+        top: 250px;
+       
+
 
     }
 
     .occupation__box {
-        left: 45%;
+        left: 24%;
         top: 30%;
         margin-right: 0;
         width: 440px;
@@ -109,14 +128,15 @@
         left: 0px;
         top: 13%;
     }
+    
 }
 
 @media(max-width:768px) {
 
 
     .sliderPosition {
-        width: 350px;
-        grid-column: 2/8;
+        width: 70vw;
+        grid-column: 1/8;
         margin-bottom: 20%;
     }
 
@@ -166,6 +186,9 @@
 
     .occupation__p {
         font-size: 14px;
+    }
+    .occupation__img{
+        width: 70vw;
     }
 
 }

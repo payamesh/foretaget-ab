@@ -10,12 +10,14 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(180px, 0.5fr));
     grid-template-rows: repeat(2, 0.5fr);
+    grid-row-gap: 100px;
 }
 
 .employee__profile {
-    margin-bottom: 50px;
+
     text-align: center;
     justify-content: center;
+    max-height:220px;
 }
 
 .employee__img {
@@ -37,6 +39,7 @@
     position: relative;
     padding: 10px;
     text-align: left;
+ 
 }
 
 .employee__textbox::before {
@@ -49,15 +52,17 @@
     color: #0075c8;
     font-weight: bolder;
     font-size: 20px;
+    
 }
 
 .employee__textbox:hover {
 
     box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1);
     padding: 15px 15px;
-    bottom: 10%;
+    bottom: 30%;
     height: 100%;
     background-color: #fff;
+
 }
 
 .employee__textbox h3 {
@@ -108,9 +113,18 @@
 .linkedin-logo {
     position: fixed;
     bottom: 10%;
-    right: 3%;
-    height: 40px;
-    width: 40px;
+    right: 40px;
+    height: 14px;
+    width: 15px;
+}
+.linkedin-line{
+    position: fixed;
+    bottom:5%;
+    right:45px;
+    height:25px;
+    width:3px;
+    background-color: #000000;
+    
 }
 
 @media(max-width:1024px) {
@@ -136,25 +150,36 @@
     }
 }
 
-@media(max-width:600px) {}
+@media(max-width:800px){
+    .employees__grid{
+        grid-template-columns: repeat(2, minmax(100px, 0.5fr));
+    }
+    .employee__textbox{
+        margin:0 auto;
+        width: 70%;
+        text-align: center;
+
+    }
+    .employee__textbox::before{
+        left:40px;
+    }
+    .employee__textbox:hover::before{
+        display:none;
+    }
+    .employee__contact{
+        padding: 0 20px 0 20px;
+    }
+}
 
 @media (max-width: 600px) {
-    .employee__textbox {
-        width: 100%;
-        text-align: left;
-    }
+  
 
     .employee__textbox::before {
         left: -2px;
     }
 
-    .employee__img {
-        max-width: 100px;
-    }
-
-    .employees__grid {
-        grid-template-columns: repeat(4, minmax(85px, 0.5fr));
-    }
+   
+   
 }
 
 @media(max-width:425px) {
